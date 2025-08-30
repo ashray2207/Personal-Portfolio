@@ -3,7 +3,7 @@ services:
     name: ashray-portfolio
     env: node
     region: oregon
-    buildCommand: npm ci && npm run build
+    buildCommand: npm install && npm run build
     startCommand: npm run serve
     envVars:
       - key: NODE_VERSION
