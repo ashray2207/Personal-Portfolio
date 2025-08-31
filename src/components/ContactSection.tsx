@@ -5,7 +5,7 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Mail, Phone, MapPin, Linkedin, Github, Instagram } from "lucide-react";
 import { useState } from "react";
-import { toast } from "sonner@2.0.3";
+import { toast } from "sonner";
 import { AbstractBackground } from "./AbstractBackground";
 import { projectId, publicAnonKey } from '../utils/supabase/info';
 
