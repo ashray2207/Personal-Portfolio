@@ -10,7 +10,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, Dialog
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { Calendar, ExternalLink, Plus, Edit, Trash2, Upload, ArrowLeft, Search } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { toast } from "sonner@2.0.3";
+import { toast } from "sonner";
 
 interface Certificate {
   id: string;
@@ -492,6 +492,9 @@ export function AllCertificates({ certificates, isEditing, onUpdateCertificates,
           </Dialog>
         )}
       </div>
+    </div>
+  );
+}
     </div>
   );
 }
