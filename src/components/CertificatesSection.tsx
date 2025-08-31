@@ -7,7 +7,7 @@ import { Textarea } from "./ui/textarea";
 import { CalendarDays, Award, ExternalLink, Plus, X, Upload, FileImage } from "lucide-react";
 import { useState, useRef } from "react";
 import { AbstractBackground } from "./AbstractBackground";
-import { toast } from "sonner@2.0.3";
+import { toast } from "sonner";
 import { projectId, publicAnonKey } from '../utils/supabase/info';
 
 interface Certificate {
