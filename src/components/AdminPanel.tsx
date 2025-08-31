@@ -5,7 +5,7 @@ import { Input } from "./ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogDescription } from "./ui/dialog";
 import { Settings, Lock, Unlock, Eye, EyeOff, Mail, MessageSquare } from "lucide-react";
-import { toast } from "sonner@2.0.3";
+import { toast } from "sonner";
 import { MessagesModal } from "./MessagesModal";
 
 interface AdminPanelProps {
