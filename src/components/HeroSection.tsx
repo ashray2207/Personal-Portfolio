@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Mail, Linkedin, Github } from "lucide-react";
 import { Button } from "./ui/button";
 import { AbstractBackground } from "./AbstractBackground";
-import ashrayPhoto from "figma:asset/2851d39444ec96902a5f3bf0e58fa53c449ae85d.png";
+import ashrayPhoto from "../../assets/2851d39444ec96902a5f3bf0e58fa53c449ae85d.png";
 
 interface HeroSectionProps {
   name: string;
