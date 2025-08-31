@@ -6,8 +6,9 @@ import { ScrollArea } from "./ui/scroll-area";
 import { Separator } from "./ui/separator";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Mail, Clock, Trash2, Eye, EyeOff, RotateCcw } from "lucide-react";
-import { toast } from "sonner@2.0.3";
+import { toast } from "sonner";
 import { projectId, publicAnonKey } from '../utils/supabase/info';
+import React from "react";
 
 interface Message {
   id: string;
@@ -207,7 +208,7 @@ export function MessagesModal({ isOpen, onClose }: MessagesModalProps) {
                             <Button
                               variant="ghost"
                               size="sm"
-                              onClick={(e) => {
+                              onClick={(e: React.MouseEvent) => {
                                 e.stopPropagation();
                                 deleteMessage(message.id);
                               }}
