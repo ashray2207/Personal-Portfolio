@@ -495,6 +495,3 @@ export function AllCertificates({ certificates, isEditing, onUpdateCertificates,
     </div>
   );
 }
-    </div>
-  );
-}
