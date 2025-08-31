@@ -9,7 +9,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, Dialog
 import { FolderOpen, Plus, X, Upload, Image, Video, ExternalLink, Calendar, Tag, Eye } from "lucide-react";
 import { useState, useRef } from "react";
 import { AbstractBackground } from "./AbstractBackground";
-import { toast } from "sonner@2.0.3";
+import { toast } from "sonner";
 import { projectId, publicAnonKey } from '../utils/supabase/info';
 
 interface ProjectMedia {
@@ -287,7 +287,7 @@ export function ProjectsSection({ projects, isEditing, onUpdateProjects, onViewA
                         />
                         <Select
                           value={project.category}
-                          onValueChange={(value) => updateProject(project.id, 'category', value)}
+                          onValueChange={(value: string) => updateProject(project.id, 'category', value)}
                         >
                           <SelectTrigger>
                             <SelectValue placeholder="Select category" />
@@ -392,7 +392,7 @@ export function ProjectsSection({ projects, isEditing, onUpdateProjects, onViewA
                   />
                   <Select
                     value={newProject.category}
-                    onValueChange={(value) => setNewProject({ ...newProject, category: value })}
+                    onValueChange={(value: string) => setNewProject({ ...newProject, category: value })}
                   >
                     <SelectTrigger>
                       <SelectValue placeholder="Select category" />
